@@ -1,0 +1,24 @@
+{
+    "data_path": "data/",
+    "processed_data_path": "processed_data/",
+    "models_dir": "models/",
+    
+    "max_features": 10000,
+    "maxlen": 200,
+    "embedding_dims": 300,
+    "model_type": "lstm",
+    
+    "stress_thresholds": {
+      "low": [-1.0, -0.3],
+      "medium": [-0.3, 0.1],
+      "high": [0.1, 1.0]
+    },
+    
+    "training": {
+      "validation_split": 0.2,
+      "epochs": 20,
+      "batch_size": 32,
+      "learning_rate": 1e-4,
+      "early_stopping_patience": 3
+    }
+  }
