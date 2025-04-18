@@ -1,0 +1,110 @@
+2025-04-18 13:10:26,684 - stress_model - ERROR - Model file not found: models/stress_detection_model.h5
+2025-04-18 13:10:26,684 - stress_model - ERROR - Tokenizer file not found: models/tokenizer.pickle
+2025-04-18 13:10:26,690 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-18 13:10:26,968 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-18 13:10:26,968 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 13:10:26,976 - werkzeug - INFO -  * Restarting with stat
+2025-04-18 13:10:38,864 - stress_model - ERROR - Model file not found: models/stress_detection_model.h5
+2025-04-18 13:10:38,864 - stress_model - ERROR - Tokenizer file not found: models/tokenizer.pickle
+2025-04-18 13:10:38,866 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-18 13:10:38,883 - werkzeug - WARNING -  * Debugger is active!
+2025-04-18 13:10:38,899 - werkzeug - INFO -  * Debugger PIN: 145-498-284
+2025-04-18 13:10:51,260 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:10:51] "GET / HTTP/1.1" 200 -
+2025-04-18 13:10:51,702 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:10:51] "GET /static/style.css HTTP/1.1" 200 -
+2025-04-18 13:10:51,710 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:10:51] "GET /static/script.js HTTP/1.1" 200 -
+2025-04-18 13:10:52,504 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:10:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-18 13:11:03,535 - stress_model - INFO - Fitted and saved tokenizer with vocabulary size 0
+2025-04-18 13:11:03,630 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:11:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-18 13:11:06,398 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:11:06] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-18 13:11:07,339 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:11:07] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-18 13:11:07,544 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:11:07] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-18 13:11:08,457 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:11:08] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-18 13:11:08,704 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:11:08] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-18 13:11:09,453 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:11:09] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-18 13:11:09,651 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:11:09] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-18 13:11:09,945 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:11:09] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-18 13:13:56,929 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\app.py', reloading
+2025-04-18 13:14:00,448 - werkzeug - INFO -  * Restarting with stat
+2025-04-18 13:33:02,844 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-18 13:33:02,852 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 13:33:02,927 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-18 13:33:33,825 - werkzeug - WARNING -  * Debugger is active!
+2025-04-18 13:33:33,847 - werkzeug - INFO -  * Debugger PIN: 145-498-284
+2025-04-18 13:33:35,442 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:33:35] "GET / HTTP/1.1" 200 -
+2025-04-18 13:33:53,077 - stress_model - ERROR - Model file not found: models/stress_detection_model.h5
+2025-04-18 13:33:53,233 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-18 13:33:53,243 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-18 13:33:53,369 - stress_model - ERROR - Model file not found: models/stress_detection_model.h5
+2025-04-18 13:33:53,473 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-18 13:33:53,543 - stress_model - ERROR - Model file not found: models/stress_detection_model.h5
+2025-04-18 13:33:53,563 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:33:53] "POST / HTTP/1.1" 200 -
+2025-04-18 13:33:53,692 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-18 13:33:53,699 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-18 13:33:53,843 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-18 13:33:53,893 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:33:53] "POST / HTTP/1.1" 200 -
+2025-04-18 13:33:54,025 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:33:54] "POST / HTTP/1.1" 200 -
+2025-04-18 13:33:54,760 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:33:54] "POST / HTTP/1.1" 200 -
+2025-04-18 13:33:55,650 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:33:55] "POST / HTTP/1.1" 200 -
+2025-04-18 13:33:58,384 - stress_model - ERROR - Model file not found: models/stress_detection_model.h5
+2025-04-18 13:33:58,488 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-18 13:33:58,496 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-18 13:33:58,527 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:33:58] "POST / HTTP/1.1" 200 -
+2025-04-18 13:36:13,826 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-18 13:36:13,826 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 13:36:13,855 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-18 13:36:21,334 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:36:21] "GET / HTTP/1.1" 200 -
+2025-04-18 13:36:21,673 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:36:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-18 13:36:21,689 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:36:21] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-04-18 13:36:28,686 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:36:28] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:36:28,854 - werkzeug - WARNING -  * Debugger is active!
+2025-04-18 13:36:28,872 - werkzeug - INFO -  * Debugger PIN: 145-498-284
+2025-04-18 13:36:30,221 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:36:30] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:36:30,253 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:36:30] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:36:30,416 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:36:30] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:36:31,058 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:36:31] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:36:31,301 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:36:31] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:36:31,490 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:36:31] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:39:09,953 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-18 13:39:09,953 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 13:39:09,998 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-18 13:39:15,481 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:15] "GET / HTTP/1.1" 200 -
+2025-04-18 13:39:15,669 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:15] "GET / HTTP/1.1" 200 -
+2025-04-18 13:39:15,721 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:15] "GET /static/style.css HTTP/1.1" 200 -
+2025-04-18 13:39:15,721 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:15] "GET /static/script.js HTTP/1.1" 200 -
+2025-04-18 13:39:15,749 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-18 13:39:15,754 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:15] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-04-18 13:39:20,894 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:20] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:39:21,345 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:21] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:39:21,690 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:21] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:39:24,174 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:24] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:39:24,320 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:24] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:39:24,481 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:24] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:39:24,714 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 13:39:24] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-04-18 13:39:28,170 - werkzeug - WARNING -  * Debugger is active!
+2025-04-18 13:39:28,229 - werkzeug - INFO -  * Debugger PIN: 145-498-284
+2025-04-18 13:39:42,420 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\app.py', reloading
+2025-04-18 13:39:42,435 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\app.py', reloading
+2025-04-18 13:39:42,446 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\app.py', reloading
+2025-04-18 13:39:45,482 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-18 13:39:45,490 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-18 13:40:04,252 - werkzeug - WARNING -  * Debugger is active!
+2025-04-18 13:40:04,268 - werkzeug - INFO -  * Debugger PIN: 145-498-284
+2025-04-18 13:40:04,268 - werkzeug - INFO -  * Debugger PIN: 145-498-284
+2025-04-18 13:44:24,431 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\create_test_data.py', reloading
+2025-04-18 13:44:24,439 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\create_test_data.py', reloading
+2025-04-18 13:44:24,447 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\data_collection.py', reloading
+2025-04-18 13:44:24,447 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\data_collection.py', reloading
+2025-04-18 13:44:24,504 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\generate_dataset.py', reloading
+2025-04-18 13:44:24,504 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\generate_dataset.py', reloading
+2025-04-18 13:44:24,512 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\main.py', reloading
+2025-04-18 13:44:24,512 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\main.py', reloading
+2025-04-18 13:44:24,528 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\stress_model.py', reloading
+2025-04-18 13:44:24,528 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\stress_model.py', reloading
+2025-04-18 13:44:24,528 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\test_model.py', reloading
+2025-04-18 13:44:24,528 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\test_model.py', reloading
+2025-04-18 13:44:24,541 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\text_preprocessing.py', reloading
+2025-04-18 13:44:24,541 - werkzeug - INFO -  * Detected change in 'C:\\Users\\joyce\\Peacekeeper\\text_preprocessing.py', reloading

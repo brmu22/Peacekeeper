@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PeaceKeeper - Stress Detector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 PeaceKeeper</h1>
+        <p>Enter any text message to detect the stress level.</p>
+        
+        <textarea id="userInput" placeholder="Type something here..."></textarea>
+        <button onclick="analyzeText()">Analyze</button>
+
+        <div id="result" style="display:none;">
+            <h2>🔍 Prediction Result</h2>
+            <p><strong>Stress Level:</strong> <span id="predictedClass"></span></p>
+            <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
