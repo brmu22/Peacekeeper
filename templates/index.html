@@ -3,22 +3,53 @@
 <head>
     <title>PeaceKeeper - Stress Detector</title>
     <link rel="stylesheet" href="/static/style.css">
+    <style>
+        label { font-weight: bold; display: block; margin-top: 15px; }
+        input, select, textarea { margin-top: 5px; width: 100%; padding: 8px; }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>🧠 PeaceKeeper</h1>
-        <p>Enter any text message to detect the stress level.</p>
-        
-        <textarea id="userInput" placeholder="Type something here..."></textarea>
-        <button onclick="analyzeText()">Analyze</button>
+        <p>Fill out the form to detect stress level based on your input.</p>
 
-        <div id="result" style="display:none;">
+        <form id="stressForm" method="POST">
+            <label for="text_input">Text Input</label>
+            <textarea id="text_input" name="text_input" placeholder="Type something here..." rows="4" required></textarea>
+
+            <label for="mood">Mood (1-10)</label>
+            <input type="number" id="mood" name="mood" min="1" max="10" required>
+
+            <label for="trigger">Stress Trigger</label>
+            <select id="trigger" name="trigger">
+                <option value="work">Work</option>
+                <option value="relationships">Relationships</option>
+                <option value="finances">Finances</option>
+                <option value="health">Health</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="sleep_quality">Sleep Quality (1-10)</label>
+            <input type="number" id="sleep_quality" name="sleep_quality" min="1" max="10" required>
+
+            <button type="submit">Analyze</button>
+        </form>
+
+        {% if result %}
+        <div id="result">
             <h2>🔍 Prediction Result</h2>
-            <p><strong>Stress Level:</strong> <span id="predictedClass"></span></p>
-            <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+            <p><strong>Stress Level:</strong> {{ result }}</p>
         </div>
+        {% endif %}
+
+        {% if error %}
+        <div id="error">
+            <p style="color: red;"><strong>Error:</strong> {{ error }}</p>
+        </div>
+        {% endif %}
     </div>
 
     <script src="/static/script.js"></script>
 </body>
 </html>
+
