@@ -48,9 +48,9 @@ class TextPreprocessor:
 
         # Load stress keywords and thresholds
         default_thresholds = self.config.get('stress_thresholds', {
-            'low': [-1.0, -0.3],
-            'medium': [-0.3, 0.1],
-            'high': [0.1, 1.0]
+            'low': [-1.0, -0.5],
+            'medium': [-0.5, 0.3],
+            'high': [0.3, 1.0]
         })
         self.stress_thresholds = default_thresholds
         self.stress_keywords = self.config.get('stress_keywords', {
@@ -58,19 +58,19 @@ class TextPreprocessor:
                 'overwhelmed', 'desperate', 'unbearable', 'exhausted', 'breakdown',
                 'panic', 'anxiety', 'depressed', 'hopeless', 'crisis', 'severe',
                 'extreme', 'terrible', 'awful', 'cannot', 'impossible', 'never',
-                'worst', 'suicidal', 'terrified', 'burnout', 'stressful'
+                'worst', 'suicidal', 'terrified', 'burnout', 'stressful','kill'
             ],
             'medium': [
                 'stressed', 'worried', 'concerned', 'upset', 'struggling',
                 'difficult', 'hard', 'trouble', 'pressure', 'tension',
                 'anxious', 'nervous', 'fear', 'tired', 'problem', 'challenge',
-                'burden', 'strain', 'uncomfortable'
+                'burden', 'strain', 'uncomfortable', 'frustrated', 'confused'
             ],
             'low': [
                 'fine', 'okay', 'alright', 'calm', 'relaxed', 'peaceful',
                 'balanced', 'coping', 'managing', 'handling', 'contained',
                 'controlled', 'mild', 'minimal', 'little', 'slight', 'rare',
-                'occasionally', 'sometimes', 'minor'
+                'occasionally', 'sometimes', 'minor', 'light', 'moderate', 'good', 'ok'
             ]
         })
 
@@ -147,7 +147,7 @@ class TextPreprocessor:
         # keyword weight: high=0.6, low=-0.6, medium=0
         key_w = norm['high'] * 0.6 + norm['low'] * -0.6
         # combine 70% sentiment, 30% keywords
-        score = 0.7 * sent_w + 0.3 * key_w
+        score = 0.6 * sent_w + 0.4 * key_w
         # thresholds from config
         for lvl, (low, high) in self.stress_thresholds.items():
             if low <= score <= high:
