@@ -146,28 +146,46 @@ def predict_stress(config_path, text):
     Predict stress level for a given text.
     """
     model = StressDetectionModel(config_path)
-    
-    try:
+
+    # Try loading the model
+    model.load_saved_model()
+
+    # If model still None, train it
+    if model.model is None:
+        logger.warning("Model not loaded. Training a new model...")
+        from generate_dataset import DatasetGenerator
+        from text_preprocessing import DataPreprocessor
+        from main import train_model
+
+        # Generate synthetic data
+        generator = DatasetGenerator(config_path)
+        generator.generate_and_save_datasets(train_size=200, val_size=50, test_size=50)
+
+        # Preprocess data
+        preprocessor = DataPreprocessor(config_path)
+        train_df, val_df = preprocessor.prepare_training_data('models')
+
+        # Train model
+        trained_model, _ = train_model(config_path, train_df, val_df)
+        model = trained_model if trained_model else model
+
+        # Reload everything to ensure predict will work
+        model = StressDetectionModel(config_path)
         model.load_saved_model()
-    except Exception as e:
-        logger.error(f"Error loading model: {str(e)}")
-        logger.info("Training a new model...")
-        train_model(config_path)
-        model.load_saved_model()
-    
-    # Text preprocessor for basic analysis
+
+    # Basic text processing
     text_processor = TextPreprocessor()
     basic_result = text_processor.process_text(text)
-    
-    # Model prediction
+
+    # Predict
     prediction = model.predict(text)
-    
+
     return {
         'text': text,
         'basic_analysis': basic_result,
         'model_prediction': prediction[0] if prediction else None
     }
-
+    
 def analyze_sample_texts(config_path):
     """
     Analyze some sample texts to demonstrate the model.

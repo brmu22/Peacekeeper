@@ -114,3 +114,116 @@
 2025-04-18 13:44:51,517 - werkzeug - INFO -  * Debugger PIN: 145-498-284
 2025-04-18 13:44:51,534 - werkzeug - WARNING -  * Debugger is active!
 2025-04-18 13:44:51,744 - werkzeug - INFO -  * Debugger PIN: 145-498-284
+2025-04-24 03:56:39,046 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 03:56:39,046 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 03:56:53,256 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 03:56:53] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-24 03:56:53,707 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 03:56:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-24 03:58:04,580 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 03:58:04] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-24 04:02:16,535 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 04:02:16,536 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 04:02:20,699 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:02:20] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-24 04:24:59,512 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 04:24:59,513 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 04:25:12,711 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:25:12] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-24 04:28:58,133 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:28:58] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-24 04:30:36,060 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 04:30:36,060 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 04:30:45,772 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:30:45] "GET / HTTP/1.1" 200 -
+2025-04-24 04:30:59,163 - app - ERROR - Error in prediction: predict_stress() missing 1 required positional argument: 'text'
+2025-04-24 04:30:59,166 - app - ERROR - Traceback (most recent call last):
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\app.py", line 885, in index
+    result = predict_stress(user_input)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: predict_stress() missing 1 required positional argument: 'text'
+
+2025-04-24 04:30:59,166 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:30:59] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-04-24 04:31:06,186 - app - ERROR - Error in prediction: predict_stress() missing 1 required positional argument: 'text'
+2025-04-24 04:31:06,186 - app - ERROR - Traceback (most recent call last):
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\app.py", line 885, in index
+    result = predict_stress(user_input)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: predict_stress() missing 1 required positional argument: 'text'
+
+2025-04-24 04:31:06,187 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:31:06] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-04-24 04:36:41,927 - app - ERROR - Error in prediction: predict_stress() missing 1 required positional argument: 'text'
+2025-04-24 04:36:41,929 - app - ERROR - Traceback (most recent call last):
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\app.py", line 885, in index
+    config_path = "config.json"
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: predict_stress() missing 1 required positional argument: 'text'
+
+2025-04-24 04:36:41,930 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:36:41] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-04-24 04:36:43,559 - app - ERROR - Error in prediction: predict_stress() missing 1 required positional argument: 'text'
+2025-04-24 04:36:43,559 - app - ERROR - Traceback (most recent call last):
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\app.py", line 885, in index
+    config_path = "config.json"
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: predict_stress() missing 1 required positional argument: 'text'
+
+2025-04-24 04:36:43,560 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:36:43] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-04-24 04:37:36,418 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 04:37:36,418 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 04:37:45,162 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:37:45] "GET / HTTP/1.1" 200 -
+2025-04-24 04:37:54,213 - stress_model - ERROR - Model file not found: models/stress_detection_model.h5
+2025-04-24 04:37:54,214 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 04:37:54,215 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 04:37:58,329 - app - ERROR - Error in prediction: 'NoneType' object has no attribute 'predict'
+2025-04-24 04:37:58,331 - app - ERROR - Traceback (most recent call last):
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\app.py", line 886, in index
+    result = predict_stress(config_path, user_input)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\main.py", line 163, in predict_stress
+    prediction = model.predict(text)
+                 ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\stress_model.py", line 398, in predict
+    predictions = self.model.predict(X)
+                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'predict'
+
+2025-04-24 04:37:58,332 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:37:58] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-04-24 04:41:25,632 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 04:41:25,633 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 04:41:31,056 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:41:31] "GET / HTTP/1.1" 200 -
+2025-04-24 04:41:54,080 - stress_model - ERROR - Model file not found: models/stress_detection_model.h5
+2025-04-24 04:41:54,080 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 04:41:54,081 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 04:41:54,081 - main - WARNING - Model not loaded. Training a new model...
+2025-04-24 04:41:54,081 - generate_dataset - INFO - Config loaded successfully
+2025-04-24 04:41:54,092 - generate_dataset - INFO - Training data (200 samples) saved to data/synthetic_train_20250424_044154.csv
+2025-04-24 04:41:54,092 - generate_dataset - INFO - Validation data (50 samples) saved to data/synthetic_val_20250424_044154.csv
+2025-04-24 04:41:54,092 - generate_dataset - INFO - Test data (50 samples) saved to data/synthetic_test_20250424_044154.csv
+2025-04-24 04:41:54,092 - text_preprocessing - INFO - Config loaded successfully
+2025-04-24 04:41:54,139 - text_preprocessing - INFO - Training data (47 samples) saved to models\training_data.csv
+2025-04-24 04:41:54,139 - text_preprocessing - INFO - Validation data (12 samples) saved to models\validation_data.csv
+2025-04-24 04:41:54,140 - main - INFO - Starting model training
+2025-04-24 04:41:54,142 - stress_model - INFO - Fitted and saved tokenizer with vocabulary size 172
+2025-04-24 04:41:54,144 - stress_model - INFO - Fitted and saved label encoder with classes ['high' 'low' 'medium']
+2025-04-24 04:41:54,249 - stress_model - INFO - Built LSTM model architecture
+2025-04-24 04:42:05,462 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 04:42:06,187 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 04:42:06,877 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 04:42:07,024 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 04:42:07,103 - stress_model - INFO - Model trained and saved to models/stress_detection_model.h5
+2025-04-24 04:42:08,125 - stress_model - INFO - Confusion Matrix:
+[[6 0 0]
+ [3 0 0]
+ [3 0 0]]
+2025-04-24 04:42:08,125 - stress_model - INFO - Evaluation metrics: {'loss': 1.0879031419754028, 'accuracy': 0.5, 'precision': 0.25, 'recall': 0.5, 'f1_score': 0.3333333333333333, 'class_report': {np.str_('high'): {'precision': 0.5, 'recall': 1.0, 'f1-score': 0.6666666666666666, 'support': 6.0}, np.str_('low'): {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 3.0}, np.str_('medium'): {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 3.0}, 'accuracy': 0.5, 'macro avg': {'precision': 0.16666666666666666, 'recall': 0.3333333333333333, 'f1-score': 0.2222222222222222, 'support': 12.0}, 'weighted avg': {'precision': 0.25, 'recall': 0.5, 'f1-score': 0.3333333333333333, 'support': 12.0}}}
+2025-04-24 04:42:08,126 - main - INFO - Model training completed. Validation accuracy: 0.5000
+2025-04-24 04:42:09,052 - main - INFO - Training history plot saved to results/training_history_20250424_044208.png
+2025-04-24 04:42:09,282 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 04:42:09,289 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 04:42:09,298 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 04:42:09,305 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 04:42:13,935 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:42:13] "POST / HTTP/1.1" 200 -
+2025-04-24 04:43:23,058 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 04:43:23,064 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 04:43:23,065 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 04:43:23,066 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 04:43:23,901 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:43:23] "POST / HTTP/1.1" 200 -
