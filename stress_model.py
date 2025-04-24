@@ -130,7 +130,12 @@ class StressDetectionModel:
 
     def encode_labels(self, labels: List[str], fit_encoder: bool = False) -> np.ndarray:
         if fit_encoder:
-            encoded_labels = self.label_encoder.fit_transform(labels)
+            # Force consistent label order
+            all_labels = ['low', 'medium', 'high']
+            self.label_encoder = LabelEncoder()
+            self.label_encoder.fit(all_labels)
+            encoded_labels = self.label_encoder.transform(labels)
+
             encoder_path = os.path.join(self.models_dir, 'label_encoder.pickle')
             with open(encoder_path, 'wb') as handle:
                 pickle.dump(self.label_encoder, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -138,6 +143,7 @@ class StressDetectionModel:
         else:
             encoded_labels = self.label_encoder.transform(labels)
         return encoded_labels
+
 
     def build_model(self, num_classes: int) -> None:
         if self.model_type == 'lstm':

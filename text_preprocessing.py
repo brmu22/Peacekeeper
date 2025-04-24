@@ -144,8 +144,7 @@ class TextPreprocessor:
         norm = {lvl: cnt / total if total else 0 for lvl, cnt in keyword_counts.items()}
         # sentiment weight inverted: negative sentiment → high stress
         sent_w = -sentiment_score
-        # keyword weight: high=0.6, low=-0.6, medium=0
-        key_w = norm['high'] * 0.6 + norm['low'] * -0.6
+        key_w = norm['high'] * 1.0 + norm['low'] * -1.0
         # combine 70% sentiment, 30% keywords
         score = 0.6 * sent_w + 0.4 * key_w
         # thresholds from config
