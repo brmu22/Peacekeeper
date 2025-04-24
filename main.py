@@ -11,6 +11,7 @@ from data_collection import DataCollectionOrchestrator
 from generate_dataset import DatasetGenerator
 from text_preprocessing import DataPreprocessor, TextPreprocessor
 from stress_model import StressDetectionModel
+from sklearn.utils import resample
 
 # Configure logging
 logging.basicConfig(
@@ -22,6 +23,25 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
+
+def balance_dataset(df):
+    """
+    Upsample classes to balance the dataset.
+    """
+    # Separate by stress level
+    low = df[df['stress_level'] == 'low']
+    medium = df[df['stress_level'] == 'medium']
+    high = df[df['stress_level'] == 'high']
+
+    max_size = max(len(low), len(medium), len(high))
+
+    low_upsampled = resample(low, replace=True, n_samples=max_size, random_state=42)
+    medium_upsampled = resample(medium, replace=True, n_samples=max_size, random_state=42)
+    high_upsampled = resample(high, replace=True, n_samples=max_size, random_state=42)
+
+    # Combine and shuffle
+    balanced_df = pd.concat([low_upsampled, medium_upsampled, high_upsampled])
+    return balanced_df.sample(frac=1).reset_index(drop=True)
 
 def setup_directories():
     """
@@ -85,6 +105,16 @@ def train_model(config_path, train_df=None, val_df=None):
             logger.error("Training or validation data not found. Please run preprocess_data first.")
             return
     
+    # Balance the training data
+    train_df = balance_dataset(train_df)
+
+    # Fit label encoder BEFORE validation to avoid unseen label errors
+    model.label_encoder.fit(train_df['stress_level'])
+
+    print("Label classes:", model.label_encoder.classes_)
+    print("Number of classes:", len(model.label_encoder.classes_))
+
+
     # Extract text and labels
     train_texts = train_df['text'].tolist()
     train_labels = train_df['stress_level'].tolist()

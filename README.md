@@ -61,7 +61,7 @@ PeaceKeeper is an AI-powered stress detection system that analyzes text input to
    python app.py
    ```
 
-2. Open your web browser and navigate to:
+2. Open your browser and navigate to:
    ```
    http://127.0.0.1:5000/
    ```
@@ -70,9 +70,9 @@ PeaceKeeper is an AI-powered stress detection system that analyzes text input to
 
 ## System Architecture
 
-PeaceKeeper consists of several interconnected components:
+PeaceKeeper consists of:
 
-1. **Data Collection**: Collects stress-related text from sources like Reddit, Twitter, and surveys
+1. **Data Collection**: Collects stress-related text
 2. **Data Processing**: Cleans and processes text data for model training
 3. **Model Training**: Trains neural network models to detect stress levels
 4. **Text Analysis**: Analyzes user input using both rule-based and ML techniques

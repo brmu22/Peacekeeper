@@ -227,3 +227,202 @@ AttributeError: 'NoneType' object has no attribute 'predict'
 2025-04-24 04:43:23,065 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
 2025-04-24 04:43:23,066 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
 2025-04-24 04:43:23,901 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 04:43:23] "POST / HTTP/1.1" 200 -
+2025-04-24 05:13:59,079 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 05:13:59,080 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 05:14:03,382 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 05:14:03] "GET / HTTP/1.1" 200 -
+2025-04-24 05:14:19,869 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 05:14:19,885 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 05:14:19,885 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 05:14:19,885 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 05:14:25,386 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 05:14:25] "POST / HTTP/1.1" 200 -
+2025-04-24 05:14:49,322 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 05:14:49,335 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 05:14:49,336 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 05:14:49,337 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 05:14:50,265 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 05:14:50] "POST / HTTP/1.1" 200 -
+2025-04-24 08:15:04,827 - __main__ - INFO - Created directory: processed_data
+2025-04-24 08:15:04,828 - __main__ - INFO - Created directory: models
+2025-04-24 08:15:04,829 - __main__ - INFO - Created directory: results
+2025-04-24 08:15:04,829 - __main__ - INFO - Created directory: logs
+2025-04-24 08:15:04,829 - __main__ - INFO - Starting model training
+2025-04-24 08:15:04,837 - __main__ - INFO - Loading data for training
+2025-04-24 08:15:04,838 - __main__ - ERROR - Training or validation data not found. Please run preprocess_data first.
+2025-04-24 08:18:16,668 - __main__ - INFO - Starting data preprocessing
+2025-04-24 08:18:26,516 - text_preprocessing - INFO - Saved processed data for data/reddit_dataset.csv
+2025-04-24 08:18:26,759 - __main__ - INFO - Preprocessing completed. Training data: 2256 samples, Validation data: 564 samples
+2025-04-24 08:18:40,111 - __main__ - INFO - Starting model training
+2025-04-24 08:18:40,112 - __main__ - INFO - Loading data for training
+2025-04-24 08:18:40,189 - stress_model - INFO - Original class distribution: Counter({'high': 1103, 'low': 717, 'medium': 436})
+2025-04-24 08:18:40,193 - stress_model - INFO - Balanced class distribution: Counter({'medium': 1103, 'high': 1103})
+2025-04-24 08:18:40,356 - stress_model - INFO - Fitted and saved tokenizer with vocabulary size 8707
+2025-04-24 08:18:40,500 - stress_model - INFO - Fitted and saved label encoder with classes ['high' 'medium']
+2025-04-24 08:18:40,502 - stress_model - INFO - Class weights applied: {0: np.float64(1.0), 1: np.float64(1.0)}
+2025-04-24 08:18:40,589 - stress_model - INFO - Built LSTM model architecture
+2025-04-24 08:19:10,579 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:19:28,141 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:19:45,430 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:20:02,644 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:20:20,726 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:20:39,639 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:21:16,067 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:21:51,985 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:21:52,060 - stress_model - INFO - Model trained and saved to models/stress_detection_model.h5
+2025-04-24 08:23:24,751 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 08:23:24,752 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 08:23:27,927 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\app.py", line 893, in index
+    return render_template("index.html", result=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brian\Desktop\peacekeeper 2\Peacekeeper\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-04-24 08:23:27,936 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 08:23:27] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-24 08:25:47,216 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 08:25:47,217 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 08:25:55,418 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 08:25:55] "GET / HTTP/1.1" 200 -
+2025-04-24 08:26:03,121 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 08:26:03,130 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 08:26:03,138 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 08:26:03,139 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 08:26:08,486 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 08:26:08] "POST / HTTP/1.1" 200 -
+2025-04-24 08:26:47,923 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 08:26:47,937 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 08:26:47,950 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 08:26:47,950 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 08:26:48,868 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 08:26:48] "POST / HTTP/1.1" 200 -
+2025-04-24 08:26:58,704 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 08:26:58,717 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 08:26:58,727 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 08:26:58,728 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 08:26:59,621 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 08:26:59] "POST / HTTP/1.1" 200 -
+2025-04-24 08:27:55,193 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 08:27:55,207 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 08:27:55,214 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 08:27:55,214 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 08:27:56,098 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 08:27:56] "POST / HTTP/1.1" 200 -
+2025-04-24 08:50:25,467 - __main__ - INFO - Starting data preprocessing
+2025-04-24 08:50:35,181 - text_preprocessing - INFO - Saved processed data for data/reddit_dataset.csv
+2025-04-24 08:50:35,421 - __main__ - INFO - Preprocessing completed. Training data: 2256 samples, Validation data: 564 samples
+2025-04-24 08:50:35,424 - __main__ - INFO - Starting model training
+2025-04-24 08:50:35,425 - __main__ - INFO - Loading data for training
+2025-04-24 08:50:35,561 - stress_model - INFO - Original class distribution: Counter({'high': 1103, 'low': 717, 'medium': 436})
+2025-04-24 08:50:35,565 - stress_model - INFO - Balanced class distribution: Counter({'medium': 1103, 'high': 1103})
+2025-04-24 08:50:35,726 - stress_model - INFO - Fitted and saved tokenizer with vocabulary size 8707
+2025-04-24 08:50:35,857 - stress_model - INFO - Fitted and saved label encoder with classes ['high' 'medium']
+2025-04-24 08:50:35,858 - stress_model - INFO - Class weights applied: {0: np.float64(1.0), 1: np.float64(1.0)}
+2025-04-24 08:50:35,943 - stress_model - INFO - Built LSTM model architecture
+2025-04-24 08:51:03,866 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:51:21,113 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:51:38,438 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:51:55,567 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:52:12,776 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:52:29,890 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:52:47,210 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:53:04,856 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:53:39,164 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 08:53:39,259 - stress_model - INFO - Model trained and saved to models/stress_detection_model.h5
+2025-04-24 08:55:11,741 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 08:55:11,742 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 08:55:34,888 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 08:55:34] "GET / HTTP/1.1" 200 -
+2025-04-24 08:55:40,413 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 08:55:40,423 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 08:55:40,429 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 08:55:40,430 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 08:55:45,654 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 08:55:45] "POST / HTTP/1.1" 200 -
+2025-04-24 08:55:56,728 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 08:55:56,739 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 08:55:56,745 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 08:55:56,746 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 08:55:57,688 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 08:55:57] "POST / HTTP/1.1" 200 -
+2025-04-24 09:01:51,985 - __main__ - INFO - Starting data preprocessing
+2025-04-24 09:02:02,389 - text_preprocessing - INFO - Saved processed data for data/reddit_dataset.csv
+2025-04-24 09:02:02,659 - __main__ - INFO - Preprocessing completed. Training data: 2256 samples, Validation data: 564 samples
+2025-04-24 09:02:02,662 - __main__ - INFO - Starting model training
+2025-04-24 09:02:02,664 - __main__ - INFO - Loading data for training
+2025-04-24 09:02:02,790 - stress_model - INFO - Original class distribution: Counter({'medium': 1103, 'low': 1103, 'high': 1103})
+2025-04-24 09:02:02,793 - stress_model - INFO - Balanced class distribution: Counter({'medium': 2206})
+2025-04-24 09:02:02,945 - stress_model - INFO - Fitted and saved tokenizer with vocabulary size 4132
+2025-04-24 09:02:03,071 - stress_model - INFO - Class weights applied: {0: np.float64(1.0)}
+2025-04-24 09:02:03,174 - stress_model - INFO - Built LSTM model architecture
+2025-04-24 09:11:41,163 - __main__ - INFO - Starting data preprocessing
+2025-04-24 09:11:51,136 - text_preprocessing - INFO - Saved processed data for data/reddit_dataset.csv
+2025-04-24 09:11:51,408 - __main__ - INFO - Preprocessing completed. Training data: 2256 samples, Validation data: 564 samples
+2025-04-24 09:11:51,411 - __main__ - INFO - Starting model training
+2025-04-24 09:11:51,412 - __main__ - INFO - Loading data for training
+2025-04-24 09:11:51,534 - stress_model - INFO - Original class distribution: Counter({'medium': 1103, 'low': 1103, 'high': 1103})
+2025-04-24 09:11:51,539 - stress_model - INFO - Balanced class distribution: Counter({'medium': 1103, 'low': 1103, 'high': 1103})
+2025-04-24 09:11:51,776 - stress_model - INFO - Fitted and saved tokenizer with vocabulary size 8407
+2025-04-24 09:11:51,973 - stress_model - INFO - Fitted and saved label encoder with classes ['high' 'low' 'medium']
+2025-04-24 09:11:51,975 - stress_model - INFO - Class weights applied: {0: np.float64(1.0), 1: np.float64(1.0), 2: np.float64(1.0)}
+2025-04-24 09:11:52,062 - stress_model - INFO - Built LSTM model architecture
+2025-04-24 09:12:28,545 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 09:12:55,294 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 09:13:21,475 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 09:13:47,495 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 09:14:14,564 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 09:14:42,261 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 09:15:36,171 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 09:16:30,827 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 09:16:30,955 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-24 09:16:31,045 - stress_model - INFO - Model trained and saved to models/stress_detection_model.h5
+2025-04-24 09:16:36,503 - stress_model - INFO - Confusion Matrix:
+[[218  27  31]
+ [ 67  93  19]
+ [ 64  31  14]]
+2025-04-24 09:16:36,504 - stress_model - INFO - Evaluation metrics: {'loss': 1.6584759950637817, 'accuracy': 0.576241135597229, 'precision': 0.5434218603623899, 'recall': 0.5762411347517731, 'f1_score': 0.5515427794113811, 'class_report': {np.str_('high'): {'precision': 0.6246418338108882, 'recall': 0.7898550724637681, 'f1-score': 0.6976, 'support': 276.0}, np.str_('low'): {'precision': 0.6158940397350994, 'recall': 0.5195530726256983, 'f1-score': 0.5636363636363636, 'support': 179.0}, np.str_('medium'): {'precision': 0.21875, 'recall': 0.12844036697247707, 'f1-score': 0.16184971098265896, 'support': 109.0}, 'accuracy': 0.5762411347517731, 'macro avg': {'precision': 0.48642862451532914, 'recall': 0.4792828373539811, 'f1-score': 0.47436202487300744, 'support': 564.0}, 'weighted avg': {'precision': 0.5434218603623899, 'recall': 0.5762411347517731, 'f1-score': 0.5515427794113811, 'support': 564.0}}}
+2025-04-24 09:16:36,504 - __main__ - INFO - Model training completed. Validation accuracy: 0.5762
+2025-04-24 09:16:37,712 - __main__ - INFO - Training history plot saved to results/training_history_20250424_091637.png
+2025-04-24 09:18:04,976 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-24 09:18:04,976 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 09:19:08,669 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:19:08] "GET / HTTP/1.1" 200 -
+2025-04-24 09:19:13,934 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 09:19:13,951 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 09:19:13,957 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 09:19:13,958 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 09:19:19,220 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:19:19] "POST / HTTP/1.1" 200 -
+2025-04-24 09:19:27,300 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 09:19:27,309 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 09:19:27,316 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 09:19:27,316 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 09:19:28,186 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:19:28] "POST / HTTP/1.1" 200 -
+2025-04-24 09:19:45,767 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 09:19:45,774 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 09:19:45,781 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 09:19:45,782 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 09:19:46,669 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:19:46] "POST / HTTP/1.1" 200 -
