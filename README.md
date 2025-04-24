@@ -123,29 +123,6 @@ Or to analyze a specific text:
 python main.py --text "Your text goes here"
 ```
 
-## Project Structure
-
-```
-peacekeeper/
-├── app.py                  # Flask web application
-├── config.json             # Configuration file
-├── main.py                 # Main application entry point
-├── create_test_data.py     # Create test dataset
-├── data_collection.py      # Collect stress-related data
-├── generate_dataset.py     # Generate synthetic datasets
-├── stress_model.py         # Neural network model implementation
-├── text_preprocessing.py   # Text preprocessing utilities
-├── test_model.py           # Model evaluation
-├── data/                   # Raw data storage
-├── processed_data/         # Processed data storage
-├── models/                 # Trained models
-├── results/                # Evaluation results
-├── static/                 # Static web resources
-│   └── style.css           # CSS styles
-└── templates/              # HTML templates
-    └── index.html          # Main application template
-```
-
 ## Database Schema
 
 The system is designed with the following entity relationships:
