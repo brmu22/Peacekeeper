@@ -142,6 +142,6 @@ python main.py --analyze
 
 ## 🗃️ User Flowchart
 
-![Flowchart](user-flow.png)  
+![Flowchart](screenshots/user-flow.png)  
 
 ---
