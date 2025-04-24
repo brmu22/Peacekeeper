@@ -426,3 +426,46 @@ jinja2.exceptions.TemplateNotFound: index.html
 2025-04-24 09:19:45,781 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
 2025-04-24 09:19:45,782 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
 2025-04-24 09:19:46,669 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:19:46] "POST / HTTP/1.1" 200 -
+2025-04-24 09:25:03,735 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 09:25:03,748 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 09:25:03,758 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 09:25:03,759 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 09:25:04,633 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:25:04] "POST / HTTP/1.1" 200 -
+2025-04-24 09:25:15,089 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 09:25:15,095 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 09:25:15,101 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 09:25:15,102 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 09:25:15,935 - tensorflow - WARNING - 5 out of the last 5 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x0000019ECEC43100> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2025-04-24 09:25:15,969 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:25:15] "POST / HTTP/1.1" 200 -
+2025-04-24 09:25:17,727 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:25:17] "GET / HTTP/1.1" 200 -
+2025-04-24 09:25:22,444 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 09:25:22,457 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 09:25:22,473 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 09:25:22,474 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 09:25:23,308 - tensorflow - WARNING - 6 out of the last 6 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x0000019ED136ACA0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2025-04-24 09:25:23,342 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:25:23] "POST / HTTP/1.1" 200 -
+2025-04-24 09:27:11,055 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 09:27:11,061 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 09:27:11,073 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 09:27:11,073 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 09:27:11,976 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:27:11] "POST / HTTP/1.1" 200 -
+2025-04-24 09:34:30,469 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 09:34:30,476 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 09:34:30,483 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 09:34:30,483 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 09:34:31,413 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:34:31] "POST / HTTP/1.1" 200 -
+2025-04-24 09:35:01,427 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 09:35:01,443 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 09:35:01,454 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 09:35:01,455 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 09:35:02,333 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:35:02] "POST / HTTP/1.1" 200 -
+2025-04-24 09:35:47,322 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 09:35:47,328 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 09:35:47,335 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 09:35:47,335 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 09:35:48,212 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:35:48] "POST / HTTP/1.1" 200 -
+2025-04-24 09:36:03,182 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-24 09:36:03,197 - stress_model - INFO - Loaded model from models/stress_detection_model.h5
+2025-04-24 09:36:03,205 - stress_model - INFO - Loaded tokenizer from models/tokenizer.pickle
+2025-04-24 09:36:03,206 - stress_model - INFO - Loaded label encoder from models/label_encoder.pickle
+2025-04-24 09:36:04,096 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 09:36:04] "POST / HTTP/1.1" 200 -
