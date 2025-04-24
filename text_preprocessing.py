@@ -48,9 +48,9 @@ class TextPreprocessor:
 
         # Load stress keywords and thresholds
         default_thresholds = self.config.get('stress_thresholds', {
-            'low': [-1.0, -0.5],
-            'medium': [-0.5, 0.3],
-            'high': [0.3, 1.0]
+            'low': [-1.0, -0.25],
+            'medium': [-0.25, 0.15],
+            'high': [0.15, 1.0]
         })
         self.stress_thresholds = default_thresholds
         self.stress_keywords = self.config.get('stress_keywords', {
@@ -144,9 +144,9 @@ class TextPreprocessor:
         norm = {lvl: cnt / total if total else 0 for lvl, cnt in keyword_counts.items()}
         # sentiment weight inverted: negative sentiment → high stress
         sent_w = -sentiment_score
-        key_w = norm['high'] * 1.0 + norm['low'] * -1.0
+        key_w = norm['high'] * 0.8 + norm['low'] * -0.8
         # combine 70% sentiment, 30% keywords
-        score = 0.6 * sent_w + 0.4 * key_w
+        score = 0.65 * sent_w + 0.35 * key_w
         # thresholds from config
         for lvl, (low, high) in self.stress_thresholds.items():
             if low <= score <= high:
