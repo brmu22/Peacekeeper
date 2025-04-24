@@ -76,7 +76,7 @@ This will:
 python app.py
 ```
 
-```CMD
+```bash
 # if error try:
 set FLASK_APP=app.py
 set FLASK_ENV=development

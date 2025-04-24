@@ -48,7 +48,6 @@
             <p class="text-lg">AI-Powered Stress Level Detection</p>
         </div>
     </header>
-
     <main class="container mx-auto py-10 px-4">
         <div class="max-w-4xl mx-auto">
             <!-- Input Card -->
@@ -57,13 +56,19 @@
                 <form id="stressForm" method="POST">
                     <div class="mb-4">
                         <label for="text_input" class="block text-gray-700 font-medium mb-2">Share your thoughts or feelings</label>
-                        <textarea 
-                            id="text_input" 
-                            name="text_input" 
-                            class="w-full h-32 p-3 border border-gray-300 rounded-lg resize-none focus:border-blue-500"
-                            placeholder="Describe how you're feeling right now..."
-                            required
-                        ></textarea>
+                        <div class="flex items-center space-x-2">
+                            <textarea 
+                                id="text_input" 
+                                name="text_input" 
+                                class="w-full h-32 p-3 border border-gray-300 rounded-lg resize-none focus:border-blue-500"
+                                placeholder="Describe how you're feeling right now..."
+                                required
+                            ></textarea>
+                            <button type="button" id="startRecBtn" onclick="startRecognition()" title="Voice input" class="p-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full focus:ring-2 focus:ring-blue-300">
+                                🎤
+                            </button>
+                        </div>
+                        <div id="statusMessage"></div>
                     </div>
                     <button 
                         type="submit" 
@@ -166,6 +171,37 @@
     </footer>
 
     <script>
+
+            // Voice Recognition Feature
+            function startRecognition() {
+                const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+                recognition.lang = 'en-US';
+                recognition.interimResults = false;
+                recognition.maxAlternatives = 1;
+
+                const status = document.getElementById('statusMessage');
+                const textarea = document.getElementById('text_input');
+
+                recognition.start();
+                status.textContent = 'Listening...';
+
+                recognition.onresult = (event) => {
+                    const transcript = event.results[0][0].transcript;
+                    textarea.value = transcript;
+                    status.textContent = 'Speech captured successfully.';
+                };
+
+                recognition.onerror = (event) => {
+                    status.textContent = 'Error: ' + event.error;
+                };
+
+                recognition.onend = () => {
+                    if (status.textContent === 'Listening...') {
+                        status.textContent = 'Speech recognition ended.';
+                    }
+                };
+            }
+
         document.addEventListener('DOMContentLoaded', function() {
             const stressForm = document.getElementById('stressForm');
             const inputCard = document.getElementById('inputCard');
@@ -178,14 +214,25 @@
                 { title: "Maintain Balance", content: "Continue your current self-care practices to maintain your low stress levels.", icon: "🧘‍♀️" },
                 { title: "Mindful Moments", content: "Take a few minutes each day to appreciate positive aspects of your life.", icon: "🌱" },
                 { title: "Regular Exercise", content: "Stay active with regular physical activity that you enjoy.", icon: "🚶‍♂️" },
-                { title: "Quality Sleep", content: "Maintain your healthy sleep schedule - aim for 7-9 hours per night.", icon: "😴" }
+                { title: "Quality Sleep", content: "Maintain your healthy sleep schedule - aim for 7-9 hours per night.", icon: "😴" },
+                { title: "Nature Time", content: "Spend time outdoors regularly - even brief exposure to nature reduces stress levels.", icon: "🌳" },
+                { title: "Creative Expression", content: "Engage in creative activities like art, music, or writing to maintain mental well-being.", icon: "🎨" },
+                { title: "Gratitude Practice", content: "Keep a gratitude journal to reinforce positive thinking and emotional resilience.", icon: "📓" },
+                { title: "Social Connections", content: "Continue nurturing your supportive relationships - they're vital for long-term well-being.", icon: "🤝" },
+                { title: "Healthy Nutrition", content: "Maintain a balanced diet rich in fruits, vegetables, and whole foods to support mood regulation.", icon: "🥗" },
+                { title: "Mindful Technology", content: "Be intentional about screen time and social media use to prevent digital stress.", icon: "📱" }
             ];
             
             const mediumStressSuggestions = [
                 { title: "Deep Breathing", content: "Practice deep breathing exercises - inhale for 4 seconds, hold for 4, exhale for 6.", icon: "🫁" },
                 { title: "Physical Activity", content: "Even a short 10-minute walk can reduce stress hormones.", icon: "🏃‍♀️" },
                 { title: "Set Boundaries", content: "Learn to say no to additional responsibilities when you're feeling stressed.", icon: "🛑" },
-                { title: "Connect with Others", content: "Share your feelings with someone you trust - social support is powerful.", icon: "👥" }
+                { title: "Connect with Others", content: "Share your feelings with someone you trust - social support is powerful.", icon: "👥" },
+                { title: "Time Management", content: "Use prioritization techniques like the Eisenhower matrix to focus on what truly matters.", icon: "⏱️" },
+                { title: "Mindfulness Practice", content: "Try a 5-minute mindfulness meditation to center yourself when feeling overwhelmed.", icon: "🧠" },
+                { title: "Scheduled Breaks", content: "Build short breaks into your day to prevent burnout and maintain productivity.", icon: "⏲️" },
+                { title: "Journaling", content: "Write down your thoughts and worries to gain perspective and identify patterns.", icon: "✏️" },
+                { title: "Digital Detox", content: "Take regular short breaks from email and social media to reduce information overload.", icon: "⚡" }
             ];
             
             const highStressSuggestions = [
@@ -193,7 +240,14 @@
                 { title: "Progressive Relaxation", content: "Try tensing and then relaxing each muscle group, starting from your toes to your head.", icon: "💆‍♂️" },
                 { title: "Break Tasks Down", content: "Divide overwhelming responsibilities into smaller, manageable steps.", icon: "📝" },
                 { title: "Limit Stimulants", content: "Reduce caffeine and sugar intake, which can increase anxiety and stress.", icon: "☕" },
-                { title: "Take a Break", content: "Give yourself permission to step away and take a mental health break.", icon: "⏸️" }
+                { title: "Take a Break", content: "Give yourself permission to step away and take a mental health break.", icon: "⏸️" },
+                { title: "Emergency Grounding", content: "Use the 5-4-3-2-1 technique: name 5 things you see, 4 you feel, 3 you hear, 2 you smell, 1 you taste.", icon: "🧭" },
+                { title: "Immediate Self-Care", content: "Prioritize basic needs like sleep, nutrition, and hydration which often suffer during high stress.", icon: "🥄" },
+                { title: "Delegate Tasks", content: "Identify responsibilities that can be shared or delegated to others temporarily.", icon: "🤲" },
+                { title: "Crisis Resources", content: "Save crisis hotline numbers in your phone for immediate support when needed.", icon: "📞" },
+                { title: "Temporary Schedule Change", content: "Consider adjusting deadlines or commitments until this high-stress period passes.", icon: "📅" },
+                { title: "Physical Release", content: "Find safe ways to release tension through vigorous exercise, crying, or creative expression.", icon: "💦" },
+                { title: "Nature Immersion", content: "Spend extended time in natural settings, which has been shown to significantly reduce stress hormones.", icon: "🏞️" }
             ];
             
             // Form submission
@@ -517,6 +571,38 @@
                 // Display suggestions
                 displaySuggestions(stressLevel);
             }
+
+      // Voice Recognition Feature
+      function startRecognition() {
+        const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        recognition.lang = 'en-US';
+        recognition.interimResults = false;
+        recognition.maxAlternatives = 1;
+
+        const status = document.getElementById('statusMessage');
+        const textarea = document.getElementById('text_input');
+
+        recognition.start();
+        status.textContent = 'Listening…';
+
+        recognition.onresult = (event) => {
+          const transcript = event.results[0][0].transcript;
+          textarea.value = transcript;
+          status.textContent = 'Speech captured successfully.';
+        };
+        recognition.onerror = (event) => {
+          status.textContent = 'Error: ' + event.error;
+        };
+        recognition.onend = () => {
+          if (status.textContent === 'Listening…') {
+            status.textContent = 'Speech recognition ended.';
+          }
+        };
+      }
+
+      // Expose to global scope so button can call it
+      window.startRecognition = startRecognition;
+            
         });
     </script>
 </body>
