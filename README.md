@@ -138,10 +138,14 @@ python main.py --analyze
 
 ---
 
----
-
 ## 🗃️ User Flowchart
 
 ![Flowchart](screenshots/user-flow.png)  
+
+---
+
+## 🗃️ ER Diagram
+
+![erDiagram](screenshots/er-diagram.png)  
 
 ---
