@@ -77,6 +77,7 @@ python app.py
 ```
 
 ```CMD
+# if error try:
 set FLASK_APP=app.py
 set FLASK_ENV=development
 flask run
